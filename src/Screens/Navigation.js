@@ -1,5 +1,5 @@
 import { createStackNavigator } from "@react-navigation/stack";
-import Home from "./Home/Home";
+import Explore from "./Explore/Explore";
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import icons from "../constants/icons";
 import { useNavigation } from "@react-navigation/native";
@@ -50,7 +50,7 @@ const Navigation = () => {
 
     return (
         <Stack.Navigator>
-            <Stack.Screen name='Home' component={Home} options={headerOptions} />
+            <Stack.Screen name='Explore' component={Explore} options={headerOptions} />
             <Stack.Screen name='Refine' component={Refine} options={{
                 title: "",
                 headerStyle: {
